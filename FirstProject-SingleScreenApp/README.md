@@ -31,7 +31,7 @@ Note: Reviewers will test on a Nexus 5X which has a screen size of 5.2 inches (1
 
 
 
-# Realisation - Force Point Bar
+# Realisation - Force Point Bar Business Card App
 
 ![GitHub Logo](Screenshots/screen1.png)     ![GitHub Logo](Screenshots/screen2.png)
  
