@@ -28,3 +28,12 @@ Note: Reviewers will test on a Nexus 5X which has a screen size of 5.2 inches (1
 
 
 6. Elements are specified in dp, text is specified in sp.
+
+
+
+# Realisation - Force Point Bar
+
+![GitHub Logo](Screenshots/screen1.png)     ![GitHub Logo](Screenshots/screen2.png)
+ 
+![GitHub Logo](Screenshots/screen3.png)
+
