@@ -1,2 +1,2 @@
 # Google Developer Challenge Scholarship
-# Android Basics - Nanodegree 2018
+## Nikolai Berov - Android Basics - Nanodegree 2018
