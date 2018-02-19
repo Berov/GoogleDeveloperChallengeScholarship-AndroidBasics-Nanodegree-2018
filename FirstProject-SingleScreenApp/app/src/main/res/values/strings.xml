@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Force Point Bar</string>
+    <string name="_359_88_333_4152">"     +359 88 333 4152"</string>
+    <string name="_16_00_2_00">"     16:00 - 2:00"</string>
+    <string name="address">"     Prof. Rasho Rashev str. 4, Sofia"</string>
+    <string name="description">Force Point is a rock bar with cold beer and darts, table football, billiards. A great place for corporate gatherings, birthdays and private parties.</string>
+    <string name="busses">"     94, 280"</string>
+    <string name="click_for_more">Click on the picture for more...</string>
 </resources>
