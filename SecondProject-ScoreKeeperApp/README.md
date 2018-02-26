@@ -14,7 +14,7 @@ Each track a different kind of scoring
 Or
 Each track a different metric (one score, the other fouls, for instance).
 
-5.The layout contains a ‘reset’ button.
+5. The layout contains a ‘reset’ button.
 
 6. "The code adheres to all of the following best practices:
 
