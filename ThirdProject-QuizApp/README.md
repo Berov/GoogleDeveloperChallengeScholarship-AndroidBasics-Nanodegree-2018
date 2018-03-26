@@ -9,9 +9,9 @@ PROJECT SPECIFICATION
 
 4. The code adheres to all of the following best practices:
 
-  Text sizes are defined in sp
-  Lengths are defined in dp
-  Padding and margin is used appropriately, such that the views are not crammed up against each other.
+  - Text sizes are defined in sp
+  - Lengths are defined in dp
+  - Padding and margin is used appropriately, such that the views are not crammed up against each other.
 
 
 
