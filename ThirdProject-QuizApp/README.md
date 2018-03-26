@@ -27,9 +27,8 @@ Padding and margin is used appropriately, such that the views are not crammed up
 8. The reset button resets the scores on both of the score TextViews.
 
 
-# Realisation - Darts Scoreboard
+# Realisation - Darts Quiz
 
-Note: Works on all screen resolutions. Landscape and portrait mode.
 
-![GitHub Logo](Screenshots/screen1.png)  ![GitHub Logo](Screenshots/screen2.png)  ![GitHub Logo](Screenshots/screen3.PNG)  
+![GitHub Logo](Screenshots/screen1.png)  ![GitHub Logo](Screenshots/screen2.png)  ![GitHub Logo](Screenshots/screen3.png)  
   
