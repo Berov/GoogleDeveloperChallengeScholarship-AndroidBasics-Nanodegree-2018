@@ -1,35 +1,42 @@
-# Second Project - Score Keeper
+# Second Project - Quiz App
 
 PROJECT SPECIFICATION
-1. The chosen game has either multiple amounts of points that can be scored, as in american football, or multiple important metrics to track, such as fouls, outs, and innings in baseball.
+1. App contains 4 - 10 questions, including at least one check box, one radio button, and one text entry.
 
-2. App is divided into two columns, one for each team.
+2. Questions are in a variety of formats such as free text response, checkboxes, and radio buttons. Checkboxes are only used for questions with multiple right answers. Radio buttons are only used for questions with a single right answer.
 
-3. Each column contains a large TextView to keep track of the current score for that team.
-Optionally, a second TextView to track another important metric such as fouls can be added.
+3. App includes a button for the user to submit their answers and receive a score.
 
-4. Each column contains multiple buttons. The buttons must track either:
+4. The code adheres to all of the following best practices:
 
-Each track a different kind of scoring
-Or
-Each track a different metric (one score, the other fouls, for instance).
-
-5. The layout contains a ‘reset’ button.
-
-6. "The code adheres to all of the following best practices:
-
-Text sizes are defined in sp
-Lengths are defined in dp
-Padding and margin is used appropriately, such that the views are not crammed up against each other."
-
-7. Each score button updates the score TextView in its column by adding the correct number of points.
-
-8. The reset button resets the scores on both of the score TextViews.
+  - Text sizes are defined in sp
+  - Lengths are defined in dp
+  - Padding and margin is used appropriately, such that the views are not crammed up against each other.
 
 
-# Realisation - Darts Scoreboard
 
-Note: Works on all screen resolutions. Landscape and portrait mode.
+5. The app includes at least four of the following Views: TextView, ImageView, Button, Checkbox, EditText, LinearLayout, RelativeLayout, ScrollView, RadioButton, RadioGroup. If applicable, the app uses nested ViewGroups to reduce the complexity of the layout.
 
-![GitHub Logo](Screenshots/screen1.png)  ![GitHub Logo](Screenshots/screen2.png)  ![GitHub Logo](Screenshots/screen3.PNG)  
+6. The app gracefully handles displaying all the content on screen when rotated. Either by updating the layout, adding a scrollable feature or some other mechanism that adheres to Android development guidelines.
+
+7. Each question has a correct answer.
+
+8. Any question which uses radio buttons allows only one to be checked at once.
+
+9. The app contains at least one if/else statement.
+
+
+
+10. The grading button displays a toast which accurately displays the results of the quiz.
+
+
+11. The grading logic checks each answer correctly. The app accurately calculates the number of correct answers and does not include incorrect answers in the count.
+
+Note: When applicable, in the grading logic remember to check that the correct answers are checked AND the incorrect answers are not checked.
+
+
+# Realisation - Darts Quiz
+
+
+![GitHub Logo](Screenshots/screen1.png)  ![GitHub Logo](Screenshots/screen2.png)  ![GitHub Logo](Screenshots/screen3.png)  
   
