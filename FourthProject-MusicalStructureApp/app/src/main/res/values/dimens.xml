@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cellSize">130dp</dimen>
+    <dimen name="cellTextViewHeight">50dp</dimen>
+    <dimen name="cellTextSize">12sp</dimen>
+    <dimen name="first_screen_jukebox_name_size">40sp</dimen>
+    <dimen name="u_padding_right">24dp</dimen>
+    <dimen name="single_song_activity_song_text_size">18sp</dimen>
+    <dimen name="single_song_activity_song_detales_text_size">14sp</dimen>
+    <dimen name="option_view_parent_padding">24dp</dimen>
+    <dimen name="play_button_padding">8dp</dimen>
+    <dimen name="base_style_padding">16dp</dimen>
+</resources>
