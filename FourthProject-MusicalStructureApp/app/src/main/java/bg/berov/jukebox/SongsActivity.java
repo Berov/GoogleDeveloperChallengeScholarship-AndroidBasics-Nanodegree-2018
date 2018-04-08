@@ -21,6 +21,7 @@ public class SongsActivity extends AppCompatActivity {
 
     private ArrayList<Song> songs;
     private ArrayList<String> contextList = new ArrayList<>();
+    private boolean optionSelectedState = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,6 +138,7 @@ public class SongsActivity extends AppCompatActivity {
 
 
     private void showSongs(String actionBarLabel) {
+        optionSelectedState = true;
         setContentView(R.layout.activity_songs);
         getSupportActionBar().setTitle(actionBarLabel);
 
@@ -159,4 +161,26 @@ public class SongsActivity extends AppCompatActivity {
         });
     }
 
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        if (optionSelectedState) {
+            outState.putBoolean("optionSelected", optionSelectedState);
+            outState.putString("actionBarLabel", getSupportActionBar().getTitle().toString());
+            outState.putParcelableArrayList("songList", songs);
+        }
+    }
+
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        if (savedInstanceState != null && savedInstanceState.getBoolean("optionSelected")) {
+            songs = savedInstanceState.getParcelableArrayList("songList");
+            showSongs(savedInstanceState.getString("actionBarLabel"));
+        }
+    }
 }
