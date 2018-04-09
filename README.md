@@ -1,4 +1,4 @@
-# Google Developer Challenge Scholarship
+# Android Basics by Google Nanodegree Program
 ## Udacity - Android Basics - Nanodegree 2018
 
 ### My Projects:
