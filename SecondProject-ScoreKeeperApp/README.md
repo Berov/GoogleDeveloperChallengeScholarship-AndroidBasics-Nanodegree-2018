@@ -16,7 +16,7 @@ Each track a different metric (one score, the other fouls, for instance).
 
 5. The layout contains a ‘reset’ button.
 
-6. "The code adheres to all of the following best practices:
+6. The code adheres to all of the following best practices:
 
 Text sizes are defined in sp
 Lengths are defined in dp
