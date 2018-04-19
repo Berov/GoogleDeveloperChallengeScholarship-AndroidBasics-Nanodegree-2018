@@ -6,4 +6,5 @@
 2. [Score Keeper App](https://github.com/Berov/GoogleDeveloperChallengeScholarship-AndroidBasics-Nanodegree-2018/tree/master/SecondProject-ScoreKeeperApp)
 3. [Quiz App](https://github.com/Berov/GoogleDeveloperChallengeScholarship-AndroidBasics-Nanodegree-2018/tree/master/ThirdProject-QuizApp)
 4. [Musical Structure App](https://github.com/Berov/GoogleDeveloperChallengeScholarship-AndroidBasics-Nanodegree-2018/tree/master/FourthProject-MusicalStructureApp)
+5. [Tour Guide App](https://github.com/Berov/GoogleDeveloperChallengeScholarship-AndroidBasics-Nanodegree-2018/tree/master/FifthProject-TourGuideApp)
 
