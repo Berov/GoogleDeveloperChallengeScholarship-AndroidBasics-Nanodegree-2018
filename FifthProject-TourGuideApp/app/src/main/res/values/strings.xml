@@ -2,11 +2,29 @@
     <string name="app_name">Bulgaria Tour Guide</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Bulgaria</string>
+    <string name="nav_header_subtitle">The Silicon Valley of Europe</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category_first">Culture</string>
+    <string name="category_second">History</string>
+    <string name="category_third"><![CDATA[Food & Drink]]></string>
+    <string name="category_fourth">Places</string>
+    <string name="city_one">Sofia</string>
+    <string name="city_two">Varna</string>
+    <string name="city_three">Burgas</string>
+    <string name="city_four">Plovdiv</string>
+
+
+    <string-array name="categories_string_array">
+        <item>@string/city_one</item>
+        <item>@string/city_two</item>
+        <item>@string/city_three</item>
+        <item>@string/city_four</item>
+
+
+    </string-array>
 </resources>

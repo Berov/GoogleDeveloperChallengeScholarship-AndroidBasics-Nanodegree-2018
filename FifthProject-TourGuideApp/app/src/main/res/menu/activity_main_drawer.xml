@@ -1,38 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+
+    <!--<item android:title="Citues">-->
+    <!--<menu>-->
+    <!--<item android:title="" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+
+    <group android:id="@+id/menu_bottom">
+        <item android:title="Cities"
+            android:enabled="false"
+            />
+    </group>
+
+
+    <group
+        android:id="@+id/menu_bottom2"
+        android:checkableBehavior="single">
+
         <item
-            android:id="@+id/sofia"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Capital - Sofia" />
+            android:id="@+id/city_one"
+            android:icon="@drawable/ic_menu_capital"
+            android:title="@string/city_one" />
         <item
-            android:id="@+id/varna"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Varna" />
+            android:id="@+id/city_two"
+            android:icon="@drawable/ic_menu_city"
+            android:title="@string/city_two" />
         <item
-            android:id="@+id/burgas"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Burgas" />
+            android:id="@+id/city_three"
+            android:icon="@drawable/ic_menu_city"
+            android:title="@string/city_three" />
         <item
-            android:id="@+id/plovdiv"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Plovdiv" />
+            android:id="@+id/city_four"
+            android:icon="@drawable/ic_menu_town"
+            android:title="@string/city_four" />
+
     </group>
 
     <!--<item android:title="Communicate">-->
-        <!--<menu>-->
-            <!--<item-->
-                <!--android:id="@+id/nav_share"-->
-                <!--android:icon="@drawable/ic_menu_share"-->
-                <!--android:title="Share" />-->
-            <!--<item-->
-                <!--android:id="@+id/nav_send"-->
-                <!--android:icon="@drawable/ic_menu_send"-->
-                <!--android:title="Send" />-->
-        <!--</menu>-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_menu_share"-->
+    <!--android:title="Share" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_menu_send"-->
+    <!--android:title="Send" />-->
+    <!--</menu>-->
     <!--</item>-->
 
 </menu>

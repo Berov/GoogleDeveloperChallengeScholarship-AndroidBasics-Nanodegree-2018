@@ -2,15 +2,18 @@ package bg.berov.bulgariatourguide;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -55,14 +58,55 @@ public class SofiaFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_sofia, container, false);
 
-
         // Create the adapter to convert the array to views
-
         AttractionsAdapter adapter = new AttractionsAdapter(getContext(), itemsList);
 
         // Attach the adapter to a ListView
-        ListView listView = (ListView) view.findViewById(R.id.listView);
+        final ListView listView = (ListView) view.findViewById(R.id.listView);
         listView.setAdapter(adapter);
+
+        //Handle clicked item
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                // ListView Clicked item index
+//                int itemPosition     = position;
+
+                // ListView Clicked item value
+                TouristAttraction  itemValue    = (TouristAttraction) listView.getItemAtPosition(position);
+//                TouristAttraction  itemValue    = (TouristAttraction) itemsList.get(position);
+                Toast.makeText(getContext(), itemValue.getDescription(), Toast.LENGTH_SHORT).show();
+
+
+
+                Intent intent = new Intent(getActivity(), ItemActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putParcelable("Item", itemValue);
+                intent.putExtras(bundle);
+                startActivity(intent);
+
+
+
+//                Intent intent = new Intent(getActivity(), ItemActivity.class);
+//                Bundle bundle = new Bundle();
+//                bundle.putParcelable("Item", itemValue);
+//                startActivity(intent);
+
+
+
+//                Song item = songs.get(position);
+//
+//                Intent intent = new Intent(SongsActivity.this, SingleSongActivity.class);
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable("song", item);
+//                intent.putExtras(bundle);
+//                startActivity(intent);
+
+
+
+
+            }
+        });
 
         return view;
     }

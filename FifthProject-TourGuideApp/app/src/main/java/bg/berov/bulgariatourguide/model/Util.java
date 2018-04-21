@@ -9,14 +9,17 @@ public final class Util {
 
     private static ArrayList<TouristAttraction> touristAttractionArrayList = new ArrayList<TouristAttraction>();
 
-    private static String category_museum = "Museum";
-    private static String category_historical_place = "Historical Place";
-    private static String category_restaurant = "Restaurant";
+    public static final String CATEGORY_FIRST = "Culture";          //Must to be same like res/strings/category_first!!!
+    public static final String CATEGORY_SECOND = "Food @ Drink";    //Must to be same like res/strings/category_second!!!
+    public static final String CATEGORY_THIRD = "History";          //Must to be same like res/strings/category_third!!!
+    public static final String CATEGORY_FOURTH = "Attractions";     //Must to be same like res/strings/category_fourth!!!
 
-    private static String city_one = "Sofia";
-    private static String city_two = "Burgas";
-    private static String city_three = "Varna";
-    private static String city_four = "Plovdiv";
+    public static  final String CITY_ONE = "Sofia";     //Must to be same like res/strings/city_one!!!
+    public static  final String CITY_TWO = "Varna";     //Must to be same like res/strings/city_two!!!
+    public static  final String CITY_THREE = "Burgas";  //Must to be same like res/strings/city_three!!!
+    public static  final String CITY_FOUR = "Plovdiv";  //Must to be same like res/strings/city_four!!!
+
+//    public static String targetCity = CITY_ONE;
 
     public static void addTouristObject(TouristAttraction item) {
         if (item != null) {
@@ -24,55 +27,40 @@ public final class Util {
         }
     }
 
-    public static String getCity_one() {
-        return city_one;
-    }
 
-    public static String getCity_two() {
-        return city_two;
-    }
-
-    public static String getCity_three() {
-        return city_three;
-    }
-
-    public static String getCity_four() {
-        return city_four;
-    }
-
-    //??????????????????????? Dali
+    //TODO repare it for security! Unmodifiable List or copy of the list
     public static ArrayList<TouristAttraction> getTouristAttractionArrayList(String city, String category) {
-        ArrayList<TouristAttraction> list = new ArrayList();
-        for (TouristAttraction touristAttraction : touristAttractionArrayList) {
 
+        ArrayList<TouristAttraction> list = new ArrayList<>();
+
+        for (TouristAttraction touristAttraction : touristAttractionArrayList) {
             if (touristAttraction.getCity().equals(city) && touristAttraction.getCategory().equals(category)) {
                 list.add(touristAttraction);
             }
         }
-
         return list;
-        //TODO repare it for security Unmodifiable List or copy of the list
     }
 
+    //Add your content here
     static {
-        TouristAttraction a = new TouristAttraction("National Museum", R.drawable.test_image, "1 - Наципонален исторочески музей, бла бla", city_one, category_museum);
-        TouristAttraction b = new TouristAttraction("Second Museum", R.drawable.test_image, "2 - B sdkjhfkjfh shdfk kjh kjfh kjh k", city_two, category_museum);
-        TouristAttraction c = new TouristAttraction("Third Museum", R.drawable.test_image, "3 - C sjhf jfh fh fhfh rk wk  jrhf ", city_three, category_museum);
-        TouristAttraction d = new TouristAttraction("Fourth Museum", R.drawable.test_image, "4 - D ijdc i ji i j ij", city_one, category_historical_place);
-        TouristAttraction e = new TouristAttraction("Fifth Museum", R.drawable.test_image, "5 - E ikdj sk j lj ", city_two, category_historical_place);
-        TouristAttraction f = new TouristAttraction("Sixth Museum", R.drawable.test_image, "6 - F soikjoi osf jo joj ", city_three, category_historical_place);
-        TouristAttraction j = new TouristAttraction("National Museum", R.drawable.test_image, "7 - Наципонален исторочески музей, бла бla", city_one, category_restaurant);
-        TouristAttraction h = new TouristAttraction("Second Museum", R.drawable.test_image, "8 - B sdkjhfkjfh shdfk kjh kjfh kjh k", city_two, category_restaurant);
-        TouristAttraction k = new TouristAttraction("Third Museum", R.drawable.test_image, "9 - C sjhf jfh fh fhfh rk wk  jrhf ", city_three, category_restaurant);
-        TouristAttraction l = new TouristAttraction("Fourth Museum", R.drawable.test_image, "10 - D ijdc i ji i j ij", city_one, category_museum);
-        TouristAttraction m = new TouristAttraction("Fifth Museum", R.drawable.test_image, "11 - E ikdj sk j lj ", city_two, category_museum);
-        TouristAttraction n = new TouristAttraction("Sixth Museum", R.drawable.test_image, "12 - F soikjoi osf jo joj ", city_three, category_museum);
-        TouristAttraction o = new TouristAttraction("National Museum", R.drawable.test_image, "13 - Наципонален исторочески музей, бла бla", city_one, category_museum);
-        TouristAttraction p = new TouristAttraction("Second Museum", R.drawable.test_image, "14 - B sdkjhfkjfh shdfk kjh kjfh kjh k", city_two, category_museum);
-        TouristAttraction q = new TouristAttraction("Third Museum", R.drawable.test_image, "15 - C sjhf jfh fh fhfh rk wk  jrhf ", city_three, category_museum);
-        TouristAttraction r = new TouristAttraction("Fourth Museum", R.drawable.test_image, "16 - D ijdc i ji i j ij", city_one, category_museum);
-        TouristAttraction s = new TouristAttraction("Fifth Museum", R.drawable.test_image, "17 - E ikdj sk j lj ", city_two, category_museum);
-        TouristAttraction t = new TouristAttraction("Sixth Museum", R.drawable.test_image, "18 - F soikjoi osf jo joj ", city_three, category_museum);
+        TouristAttraction a = new TouristAttraction("National Museum", R.drawable.test_image, "1 - Наципонален исторочески музей, бла бla", CITY_ONE, CATEGORY_FIRST);
+        TouristAttraction b = new TouristAttraction("Second Museum", R.drawable.test_image, "2 - B sdkjhfkjfh shdfk kjh kjfh kjh k", CITY_TWO, CATEGORY_FIRST);
+        TouristAttraction c = new TouristAttraction("Third Museum", R.drawable.test_image, "3 - C sjhf jfh fh fhfh rk wk  jrhf ", CITY_THREE, CATEGORY_FIRST);
+        TouristAttraction d = new TouristAttraction("Fourth Museum", R.drawable.test_image, "4 - D ijdc i ji i j ij", CITY_ONE, CATEGORY_SECOND);
+        TouristAttraction e = new TouristAttraction("Fifth Museum", R.drawable.test_image, "5 - E ikdj sk j lj ", CITY_TWO, CATEGORY_SECOND);
+        TouristAttraction f = new TouristAttraction("Sixth Museum", R.drawable.test_image, "6 - F soikjoi osf jo joj ", CITY_THREE, CATEGORY_SECOND);
+        TouristAttraction j = new TouristAttraction("National Museum", R.drawable.test_image, "7 - Наципонален исторочески музей, бла бla", CITY_ONE, CATEGORY_THIRD);
+        TouristAttraction h = new TouristAttraction("Second Museum", R.drawable.test_image, "8 - B sdkjhfkjfh shdfk kjh kjfh kjh k", CITY_TWO, CATEGORY_THIRD);
+        TouristAttraction k = new TouristAttraction("Third Museum", R.drawable.test_image, "9 - C sjhf jfh fh fhfh rk wk  jrhf ", CITY_THREE, CATEGORY_THIRD);
+        TouristAttraction l = new TouristAttraction("Fourth Museum", R.drawable.test_image, "10 - D ijdc i ji i j ij", CITY_ONE, CATEGORY_FIRST);
+        TouristAttraction m = new TouristAttraction("Fifth Museum", R.drawable.test_image, "11 - E ikdj sk j lj ", CITY_TWO, CATEGORY_FIRST);
+        TouristAttraction n = new TouristAttraction("Sixth Museum", R.drawable.test_image, "12 - F soikjoi osf jo joj ", CITY_THREE, CATEGORY_FIRST);
+        TouristAttraction o = new TouristAttraction("National Museum", R.drawable.test_image, "13 - Наципонален исторочески музей, бла бla", CITY_ONE, CATEGORY_FIRST);
+        TouristAttraction p = new TouristAttraction("Second Museum", R.drawable.test_image, "14 - B sdkjhfkjfh shdfk kjh kjfh kjh k", CITY_TWO, CATEGORY_FIRST);
+        TouristAttraction q = new TouristAttraction("Third Museum", R.drawable.test_image, "15 - C sjhf jfh fh fhfh rk wk  jrhf ", CITY_THREE, CATEGORY_FIRST);
+        TouristAttraction r = new TouristAttraction("Fourth Museum", R.drawable.test_image, "16 - D ijdc i ji i j ij", CITY_ONE, CATEGORY_FIRST);
+        TouristAttraction s = new TouristAttraction("Fifth Museum", R.drawable.test_image, "17 - E ikdj sk j lj ", CITY_TWO, CATEGORY_FIRST);
+        TouristAttraction t = new TouristAttraction("Sixth Museum", R.drawable.test_image, "18 - F soikjoi osf jo joj ", CITY_THREE, CATEGORY_FIRST);
     }
 
 }

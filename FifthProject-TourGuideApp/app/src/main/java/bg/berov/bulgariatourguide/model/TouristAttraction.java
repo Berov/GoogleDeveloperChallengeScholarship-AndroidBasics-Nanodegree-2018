@@ -5,7 +5,7 @@ import android.os.Parcelable;
 
 public class TouristAttraction implements Parcelable {
     private String label;
-    private int imageResource;
+    private int imageResource;  //int for stored as drawable image
     private String description;
     private String city;
     private String category; //museum, bar, hotel, gallery...
@@ -17,7 +17,7 @@ public class TouristAttraction implements Parcelable {
         this.city = city;
         this.category = category;
 
-        Util.addTouristObject(this);
+        Util.addTouristObject(this); //automatic add new item in the static content list when the item is created
     }
 
     public String getLabel() {
@@ -40,7 +40,8 @@ public class TouristAttraction implements Parcelable {
         return category;
     }
 
-    //Makes the object Parcelable
+
+    //Makes the object Parcelable...
     @Override
     public int describeContents() {
         return 0;

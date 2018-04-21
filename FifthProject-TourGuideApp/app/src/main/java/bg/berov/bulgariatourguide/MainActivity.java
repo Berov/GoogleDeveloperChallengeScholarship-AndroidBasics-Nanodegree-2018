@@ -1,6 +1,9 @@
 package bg.berov.bulgariatourguide;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.GravityCompat;
@@ -11,19 +14,38 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 
 import bg.berov.bulgariatourguide.model.Util;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    public static String city = Util.getCity_one();
+
+    private static String targetCity;
+
+    public static String getTargetCity() {
+        return targetCity;
+    }
+
+    //    private String city = getString(R.string.city_one);
     private TabPagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        refreshActivity("Sofia");
+
+        if (savedInstanceState != null) {
+            targetCity = savedInstanceState.getString("activeCity");
+        } else {
+            targetCity = Util.CITY_ONE;
+        }
+
+
+//        refreshActivity(getString(R.string.city_one));
+        refreshActivity(targetCity);
+
+
 //        setContentView(R.layout.activity_main);
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
@@ -94,36 +116,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.sofia) {
-            city = Util.getCity_one();
-            refreshActivity("Sofia");
-        } else if (id == R.id.varna) {
-            city = Util.getCity_three();
-
-
-            refreshActivity("Varna");
-
-//            adapter = new TabPagerAdapter(getSupportFragmentManager());
-//            finish();
-//            startActivity(getIntent());
-
-
-
-//            finish();
-//            overridePendingTransition(0, 0);
-//            startActivity(getIntent());
-//            overridePendingTransition(0, 0);
-
-
-        } else if (id == R.id.burgas) {
-            city = Util.getCity_two();
-            refreshActivity("Burgas");
-        } else if (id == R.id.plovdiv) {
-            refreshActivity("Plovdiv");
-//        } else if (id == R.id.nav_share) {
-//
-//        } else if (id == R.id.nav_send) {
-
+        if (id == R.id.city_one) {
+            targetCity = Util.CITY_ONE;
+            refreshActivity(getString(R.string.city_one));
+        } else if (id == R.id.city_two) {
+            targetCity = Util.CITY_TWO;
+            refreshActivity(getString(R.string.city_two));
+        } else if (id == R.id.city_three) {
+            targetCity = Util.CITY_THREE;
+            refreshActivity(getString(R.string.city_three));
+        } else if (id == R.id.city_four) {
+            targetCity = Util.CITY_FOUR;
+            refreshActivity(getString(R.string.city_four));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -131,8 +135,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-    private void refreshActivity(String actionBarLabel){
+    private void refreshActivity(String actionBarLabel) {
         setContentView(R.layout.activity_main);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -153,6 +159,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+//
+//        //--------------------------------------
+//        int[][] state = new int[][] {
+//                new int[] {-android.R.attr.state_enabled}, // disabled
+//                new int[] {android.R.attr.state_enabled}, // enabled
+//                new int[] {-android.R.attr.state_checked}, // unchecked
+//                new int[] { android.R.attr.state_checked}  // pressed
+//
+//        };
+//
+//        int[] color = new int[] {
+//                Color.RED,
+//                Color.BLUE,
+//                Color.RED,
+//                Color.RED
+//        };
+//
+//        ColorStateList ColorStateList1 = new ColorStateList(state, color);
+//        navigationView.setItemTextColor(ColorStateList1);
+//        //--------------------------------
 
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
@@ -163,4 +189,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getSupportActionBar().setTitle(actionBarLabel);
 
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putString("activeCity", targetCity);
+
+        super.onSaveInstanceState(outState);
+    }
+
+//    @Override
+//    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+//        super.onRestoreInstanceState(savedInstanceState);
+//
+//
+//        if(savedInstanceState!= null){
+//            targetCity = savedInstanceState.getString("activeCity");
+//        }
+//
+//    }
 }

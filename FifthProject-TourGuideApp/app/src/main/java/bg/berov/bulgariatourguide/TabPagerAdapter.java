@@ -9,7 +9,11 @@ import bg.berov.bulgariatourguide.model.Util;
 
 
 public class TabPagerAdapter extends FragmentStatePagerAdapter {
-    private String[] tabLabel = {"Museums", "Restaurants", "Historical Places"};
+    private String[] tabLabel = {Util.CATEGORY_FIRST, Util.CATEGORY_SECOND, Util.CATEGORY_THIRD, Util.CATEGORY_FOURTH};
+//Context context;
+
+
+//    private String[] tabLabel =  context.getResource.getStringArray(R.array.categories_string_array);
 
 
     public TabPagerAdapter(FragmentManager fm) {
@@ -20,14 +24,15 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-//                return new SofiaFragment().setArguments(Util.getTouristAttractionArrayList(MainActivity.city, "Museum"));
-//                return new CityFragment();
-                return SofiaFragment.newInstance(Util.getTouristAttractionArrayList(MainActivity.city, "Museum"));
+//                return SofiaFragment.newInstance(Util.getTouristAttractionArrayList(MainActivity.city, Util.CATEGORY_FIRST));
+                return SofiaFragment.newInstance(Util.getTouristAttractionArrayList(MainActivity.getTargetCity(), Util.CATEGORY_FIRST));
             case 1:
-                return SofiaFragment.newInstance(Util.getTouristAttractionArrayList(MainActivity.city, "Historical Place"));
+                return SofiaFragment.newInstance(Util.getTouristAttractionArrayList(MainActivity.getTargetCity(), Util.CATEGORY_SECOND));
 //                return new CityFragment();
             case 2:
-                return SofiaFragment.newInstance(Util.getTouristAttractionArrayList(MainActivity.city, "Restaurant"));
+                return SofiaFragment.newInstance(Util.getTouristAttractionArrayList(MainActivity.getTargetCity(), Util.CATEGORY_THIRD));
+            case 3:
+                return SofiaFragment.newInstance(Util.getTouristAttractionArrayList(MainActivity.getTargetCity(), Util.CATEGORY_FOURTH));
         }
 
         return null;
@@ -35,7 +40,7 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
     @Nullable
@@ -43,12 +48,6 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter {
     public CharSequence getPageTitle(int position) {
 //        return super.getPageTitle(position);
         return tabLabel[position];
-    }
-
-
-    public void changeFragments() {
-        //TODO
-
     }
 
 
