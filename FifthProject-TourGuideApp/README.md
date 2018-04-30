@@ -1,38 +1,22 @@
-# First Project - Single Screen App
+# Fifth Project - Multi-Screen App - Tour Guide App
 
 PROJECT SPECIFICATION
 
-1. Your design must include:
-     - Business name
-     - At least one photo representing the business
-     - Two or more other pieces of information, such as:
-          - Contact information for the business (eg phone number, email address, website)
-          - Address of the Business
-          - Description of business
-          - Hours of operation
+1. App contains at least 4 lists of relevant attractions for a location
+2. User navigates between lists in Fragments using either a Navigation Drawer or a ViewPager plus TabLayout.
+3. Each list item contains information about an event, restaurant, historical site, or similar.
+4. At least one list includes pictures of the location.
+5. App contains a custom object for storing location information .
+6. App uses a custom adapter to populate the layout with views based on instances of the custom class.
+7. All strings are stored in the strings.xml resource file.
+8. All images are stored as drawables. All drawables are stored at multiple densities.
+9. Code is easily readable so that a fellow programmer can understand the purpose of the app.
+10. All variables, methods, and resource IDs are descriptively named so that another developer reading the code can easily understand their function.
 
+# Realisation - Bulgaria Tour Guide
 
-2. Program must function in Android Studio emulator and on a phone. Upon launching on a phone, the card appears.
-
-
-3. Layout scales responsively for screen sizes in portrait mode, with no part of any images only partially visible. Student is not responsible for responsive design in landscape mode.
-
-
-Note: Reviewers will test on a Nexus 5X which has a screen size of 5.2 inches (132.08mm). It is advised you test on this size at minimum. If your content does not fit on this size, consider implementing a ScrollView.
-
-
-4. XML must include a Relative Layout and/or a Linear Layout
-
-
-5. Must have one or more image views or text views.
-
-
-6. Elements are specified in dp, text is specified in sp.
-
-
-
-# Realisation - Force Point Bar Business Card App
-
-![GitHub Logo](Screenshots/screen1.png)     ![GitHub Logo](Screenshots/screen2.png)
-![GitHub Logo](Screenshots/screen3.png)
-
+![GitHub Logo](Screenshots/screen_01.png)     ![GitHub Logo](Screenshots/screen_02.png)
+![GitHub Logo](Screenshots/screen_03.png)     ![GitHub Logo](Screenshots/screen_04.png)
+![GitHub Logo](Screenshots/screen_05.png)
+![GitHub Logo](Screenshots/screen_06.png)
+![GitHub Logo](Screenshots/screen_07.png)
