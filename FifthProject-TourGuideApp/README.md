@@ -15,8 +15,7 @@ PROJECT SPECIFICATION
 
 # Realisation - Bulgaria Tour Guide
 
-Note: Works on all screen resolutions. Landscape and portrait mode.
-This is not a commercial application. The video used in the application is owned by http://bulgariatravel.org/ and is here only for educational purposes!
+Note: This is not a commercial application. The video used in the application is owned by http://bulgariatravel.org/ and is here only for educational purposes!
 
 ![GitHub Logo](Screenshots/screen_01.png)     ![GitHub Logo](Screenshots/screen_02.png)
 ![GitHub Logo](Screenshots/screen_03.png)     ![GitHub Logo](Screenshots/screen_04.png)
