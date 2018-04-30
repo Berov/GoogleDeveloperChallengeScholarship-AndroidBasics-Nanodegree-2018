@@ -1,58 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-
     tools:showIn="navigation_view">
 
 
-    <!--<item android:title="Citues">-->
-    <!--<menu>-->
-    <!--<item android:title="" />-->
-    <!--</menu>-->
-    <!--</item>-->
-
-
     <group android:id="@+id/menu_bottom">
-        <item android:title="Cities"
+        <item
             android:enabled="false"
-            />
+            android:title="@string/cities" />
     </group>
 
 
-    <group
-        android:id="@+id/menu_bottom2"
-        android:checkableBehavior="single">
-
+    <group android:checkableBehavior="single">
         <item
-            android:id="@+id/city_one"
-            android:icon="@drawable/ic_menu_capital"
+            android:id="@+id/nav_city_one"
+            android:icon="@drawable/ic_capital"
             android:title="@string/city_one" />
         <item
-            android:id="@+id/city_two"
-            android:icon="@drawable/ic_menu_city"
+            android:id="@+id/nav_city_two"
+            android:icon="@drawable/ic_city"
             android:title="@string/city_two" />
         <item
-            android:id="@+id/city_three"
-            android:icon="@drawable/ic_menu_city"
+            android:id="@+id/nav_city_three"
+            android:icon="@drawable/ic_city"
             android:title="@string/city_three" />
         <item
-            android:id="@+id/city_four"
-            android:icon="@drawable/ic_menu_town"
+            android:id="@+id/nav_city_four"
+            android:icon="@drawable/ic_town"
             android:title="@string/city_four" />
-
     </group>
 
-    <!--<item android:title="Communicate">-->
-    <!--<menu>-->
-    <!--<item-->
-    <!--android:id="@+id/nav_share"-->
-    <!--android:icon="@drawable/ic_menu_share"-->
-    <!--android:title="Share" />-->
-    <!--<item-->
-    <!--android:id="@+id/nav_send"-->
-    <!--android:icon="@drawable/ic_menu_send"-->
-    <!--android:title="Send" />-->
-    <!--</menu>-->
-    <!--</item>-->
 
 </menu>

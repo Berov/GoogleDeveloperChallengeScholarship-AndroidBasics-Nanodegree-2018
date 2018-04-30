@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+    <group
+        android:id="@+id/first_group"
+        android:enabled="true"
+        android:visible="true" >
+        <item
+            android:id="@+id/action_bulgaria"
+            android:orderInCategory="100"
+            android:title="@string/action_bulgaria"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_city_one"
+            android:orderInCategory="100"
+            android:title="@string/action_city_one"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_city_two"
+            android:orderInCategory="100"
+            android:title="@string/action_city_two"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_city_three"
+            android:orderInCategory="100"
+            android:title="@string/action_city_three"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_city_four"
+            android:orderInCategory="100"
+            android:title="@string/action_city_four"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_about"
+            android:orderInCategory="100"
+            android:title="@string/action_about"
+            app:showAsAction="never" />
+    </group>
+
+    <group
+        android:id="@+id/second_group"
+        android:enabled="true"
+        android:visible="true">
+        <item
+            android:id="@+id/action_exit"
+            android:orderInCategory="100"
+            android:title="Exit"
+            app:showAsAction="never" />
+    </group>
 </menu>

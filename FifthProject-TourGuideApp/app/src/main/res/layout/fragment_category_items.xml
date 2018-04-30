@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_top_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill_vertical|center"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".CategoryItemsFragment">
+
+
+    <TextView
+        android:id="@+id/textView_no_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Still no items in this category."
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="8dp" />
+
+</LinearLayout>
