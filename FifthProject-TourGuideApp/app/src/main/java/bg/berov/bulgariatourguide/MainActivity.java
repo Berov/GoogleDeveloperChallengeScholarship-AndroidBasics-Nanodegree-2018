@@ -59,25 +59,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         touristAttractionArrayList = new ArrayList<TouristAttraction>();
         //add content--------------
-        TouristAttraction nationalTheater = new TouristAttraction(getString(R.string.national_theater), R.drawable.national_theater, getString(R.string.national_theater_description), getString(R.string.city_one), getString(R.string.category_first));
-        TouristAttraction sofiaTheater = new TouristAttraction(getString(R.string.sofia_theater), R.drawable.sofia_theater, getString(R.string.sofia_theater_description), getString(R.string.city_one), getString(R.string.category_first));
-        TouristAttraction sofiaOpera = new TouristAttraction(getString(R.string.sofia_opera), R.drawable.sofia_opera, getString(R.string.sofia_opera_description), getString(R.string.city_one), getString(R.string.category_first));
-        TouristAttraction ndk = new TouristAttraction(getString(R.string.sofia_ndk), R.drawable.sofia_ndk, getString(R.string.sofia_ndk_description), getString(R.string.city_one), getString(R.string.category_first));
-        TouristAttraction streetArtTour = new TouristAttraction(getString(R.string.sofia_street_art_tour), R.drawable.sofia_streetart, getString(R.string.sofia_street_art_tour_description), getString(R.string.city_one), getString(R.string.category_fourth));
-        TouristAttraction sofiaLiveClub = new TouristAttraction(getString(R.string.sofia_live_club), R.drawable.sofia_live_club, getString(R.string.sofia_live_club_description), getString(R.string.city_one), getString(R.string.category_fourth));
-        TouristAttraction sofiaZoo = new TouristAttraction(getString(R.string.sofia_zoo), R.drawable.sofia_zoo, getString(R.string.sofia_zoo_description), getString(R.string.city_one), getString(R.string.category_fourth));
-        TouristAttraction sofia_al_nevski = new TouristAttraction(getString(R.string.sofia_al_nevski), R.drawable.sofia_al_nevski, getString(R.string.sofia_al_nevski_description), getString(R.string.city_one), getString(R.string.category_third));
-        TouristAttraction sofia_nhm = new TouristAttraction(getString(R.string.sofia_nhm), R.drawable.sofia_nhm, getString(R.string.sofia_nhm_description), getString(R.string.city_one), getString(R.string.category_third));
-        TouristAttraction sofiaRotunda = new TouristAttraction(getString(R.string.sofia_rotunda), R.drawable.sofia_rotunda, getString(R.string.sofia_rotunda_description), getString(R.string.city_one), getString(R.string.category_third));
-        TouristAttraction sofiaEastGate = new TouristAttraction(getString(R.string.sofia_east_gate), R.drawable.sofia_east_gate, getString(R.string.sofia_east_gate_description), getString(R.string.city_one), getString(R.string.category_third));
-        TouristAttraction sofiaRomanWall = new TouristAttraction(getString(R.string.sofia_roman_wall), R.drawable.sofia_roman_wall, getString(R.string.sofia_roman_wall_description), getString(R.string.city_one), getString(R.string.category_third));
+        new TouristAttraction(getString(R.string.national_theater), R.drawable.national_theater, getString(R.string.national_theater_description), getString(R.string.city_one), getString(R.string.category_first));
+        new TouristAttraction(getString(R.string.sofia_theater), R.drawable.sofia_theater, getString(R.string.sofia_theater_description), getString(R.string.city_one), getString(R.string.category_first));
+        new TouristAttraction(getString(R.string.sofia_opera), R.drawable.sofia_opera, getString(R.string.sofia_opera_description), getString(R.string.city_one), getString(R.string.category_first));
+        new TouristAttraction(getString(R.string.sofia_ndk), R.drawable.sofia_ndk, getString(R.string.sofia_ndk_description), getString(R.string.city_one), getString(R.string.category_first));
+        new TouristAttraction(getString(R.string.sofia_street_art_tour), R.drawable.sofia_streetart, getString(R.string.sofia_street_art_tour_description), getString(R.string.city_one), getString(R.string.category_fourth));
+        new TouristAttraction(getString(R.string.sofia_live_club), R.drawable.sofia_live_club, getString(R.string.sofia_live_club_description), getString(R.string.city_one), getString(R.string.category_fourth));
+        new TouristAttraction(getString(R.string.sofia_zoo), R.drawable.sofia_zoo, getString(R.string.sofia_zoo_description), getString(R.string.city_one), getString(R.string.category_fourth));
+        new TouristAttraction(getString(R.string.sofia_al_nevski), R.drawable.sofia_al_nevski, getString(R.string.sofia_al_nevski_description), getString(R.string.city_one), getString(R.string.category_third));
+        new TouristAttraction(getString(R.string.sofia_nhm), R.drawable.sofia_nhm, getString(R.string.sofia_nhm_description), getString(R.string.city_one), getString(R.string.category_third));
+        new TouristAttraction(getString(R.string.sofia_rotunda), R.drawable.sofia_rotunda, getString(R.string.sofia_rotunda_description), getString(R.string.city_one), getString(R.string.category_third));
+        new TouristAttraction(getString(R.string.sofia_east_gate), R.drawable.sofia_east_gate, getString(R.string.sofia_east_gate_description), getString(R.string.city_one), getString(R.string.category_third));
+        new TouristAttraction(getString(R.string.sofia_roman_wall), R.drawable.sofia_roman_wall, getString(R.string.sofia_roman_wall_description), getString(R.string.city_one), getString(R.string.category_third));
 
-        TouristAttraction varnaRomanBaths = new TouristAttraction(getString(R.string.varna_roman_baths), R.drawable.varna_roman_baths, getString(R.string.varna_roman_baths_description), getString(R.string.city_two), getString(R.string.category_third));
-        TouristAttraction varnaOperaTheater = new TouristAttraction(getString(R.string.varna_opera_theatre), R.drawable.varna_opera_theatre, getString(R.string.varna_opera_theatre_description), getString(R.string.city_two), getString(R.string.category_first));
-        TouristAttraction varnaDolphinarium = new TouristAttraction(getString(R.string.varna_dolphinarium), R.drawable.varna_dolphinarium, getString(R.string.varna_dolphinarium_description), getString(R.string.city_two), getString(R.string.category_fourth));
-        TouristAttraction varna_bar_cubo = new TouristAttraction(getString(R.string.varna_bar_cubo), R.drawable.varna_bar_cubo, getString(R.string.varna_bar_cubo_description), getString(R.string.city_two), getString(R.string.category_second));
-
-//        TouristAttraction testObject = new TouristAttraction("Label", R.drawable.bulgaria, "Some description of the item", getString(R.string.city_three), getString(R.string.category_first));
+        new TouristAttraction(getString(R.string.varna_roman_baths), R.drawable.varna_roman_baths, getString(R.string.varna_roman_baths_description), getString(R.string.city_two), getString(R.string.category_third));
+        new TouristAttraction(getString(R.string.varna_opera_theatre), R.drawable.varna_opera_theatre, getString(R.string.varna_opera_theatre_description), getString(R.string.city_two), getString(R.string.category_first));
+        new TouristAttraction(getString(R.string.varna_dolphinarium), R.drawable.varna_dolphinarium, getString(R.string.varna_dolphinarium_description), getString(R.string.city_two), getString(R.string.category_fourth));
+        new TouristAttraction(getString(R.string.varna_bar_cubo), R.drawable.varna_bar_cubo, getString(R.string.varna_bar_cubo_description), getString(R.string.city_two), getString(R.string.category_second));
 
 
         categoryFirst = getString(R.string.category_first);
