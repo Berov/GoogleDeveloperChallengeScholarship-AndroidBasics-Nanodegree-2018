@@ -33,12 +33,12 @@ PROJECT SPECIFICATION
 11. The grading logic checks each answer correctly. The app accurately calculates the number of correct answers and does not include incorrect answers in the count.
 
 This project is about combining various ideas and skills we’ve been practicing throughout the course. They include:
-  Connecting to an API
-  Parsing the JSON response
-  Handling error cases gracefully
-  Updating information regularly
-  Using an AsyncTask
-  Doing network operations independent of the Activity lifecycle
+  -Connecting to an API
+  -Parsing the JSON response
+  -Handling error cases gracefully
+  -Updating information regularly
+  -Using an AsyncTask
+  -Doing network operations independent of the Activity lifecycle
 
 
 # Realisation:
