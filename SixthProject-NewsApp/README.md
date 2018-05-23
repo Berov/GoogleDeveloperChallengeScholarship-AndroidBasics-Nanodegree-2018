@@ -32,10 +32,16 @@ PROJECT SPECIFICATION
 
 11. The grading logic checks each answer correctly. The app accurately calculates the number of correct answers and does not include incorrect answers in the count.
 
-Note: When applicable, in the grading logic remember to check that the correct answers are checked AND the incorrect answers are not checked.
+This project is about combining various ideas and skills we’ve been practicing throughout the course. They include:
+  Connecting to an API
+  Parsing the JSON response
+  Handling error cases gracefully
+  Updating information regularly
+  Using an AsyncTask
+  Doing network operations independent of the Activity lifecycle
 
 
-# Realisation - Darts Quiz
+# Realisation:
 
 
 ![GitHub Logo](Screenshots/screen1.png)  ![GitHub Logo](Screenshots/screen2.png)  ![GitHub Logo](Screenshots/screen3.png)  ![GitHub Logo](Screenshots/screen4.png)  ![GitHub Logo](Screenshots/screen5.png)  ![GitHub Logo](Screenshots/screen6.png)  
