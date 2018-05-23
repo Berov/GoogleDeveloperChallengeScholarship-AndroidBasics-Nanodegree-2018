@@ -38,5 +38,5 @@ Note: When applicable, in the grading logic remember to check that the correct a
 # Realisation - Darts Quiz
 
 
-![GitHub Logo](Screenshots/screen1.png)  ![GitHub Logo](Screenshots/screen2.png)  ![GitHub Logo](Screenshots/screen3.png)  
+![GitHub Logo](Screenshots/screen1.png)  ![GitHub Logo](Screenshots/screen2.png)  ![GitHub Logo](Screenshots/screen3.png)  ![GitHub Logo](Screenshots/screen4.png)  ![GitHub Logo](Screenshots/screen5.png)  ![GitHub Logo](Screenshots/screen6.png)  
   
