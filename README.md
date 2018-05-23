@@ -7,4 +7,4 @@
 3. [Quiz App](https://github.com/Berov/GoogleDeveloperChallengeScholarship-AndroidBasics-Nanodegree-2018/tree/master/ThirdProject-QuizApp)
 4. [Musical Structure App](https://github.com/Berov/GoogleDeveloperChallengeScholarship-AndroidBasics-Nanodegree-2018/tree/master/FourthProject-MusicalStructureApp)
 5. [Tour Guide App](https://github.com/Berov/GoogleDeveloperChallengeScholarship-AndroidBasics-Nanodegree-2018/tree/master/FifthProject-TourGuideApp)
-
+6. [News App, Stage 1](https://github.com/Berov/GoogleDeveloperChallengeScholarship-AndroidBasics-Nanodegree-2018/tree/master/SixthProject-NewsApp)
