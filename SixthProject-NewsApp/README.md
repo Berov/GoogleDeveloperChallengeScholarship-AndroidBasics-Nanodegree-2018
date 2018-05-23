@@ -1,4 +1,4 @@
-# Third Project - Quiz App
+# Sixth Project - News App, Stage 1
 
 PROJECT SPECIFICATION
 1. App contains 4 - 10 questions, including at least one check box, one radio button, and one text entry.
