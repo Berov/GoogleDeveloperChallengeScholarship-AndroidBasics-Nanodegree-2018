@@ -25,7 +25,7 @@ If available, author name and date published should be included. Please note not
 11. All Strings are stored in the strings.xml resource file.
 
 
-# Realisation:
+# Realisation: Sport News App with Settings
 
 
 ![GitHub Logo](Screenshots/screen1.png)  ![GitHub Logo](Screenshots/screen2.png)  ![GitHub Logo](Screenshots/screen3.png)  ![GitHub Logo](Screenshots/screen4.png)  ![GitHub Logo](Screenshots/screen5.png)  ![GitHub Logo](Screenshots/screen6.png)   ![GitHub Logo](Screenshots/screen7.png)   ![GitHub Logo](Screenshots/screen8.png)   ![GitHub Logo](Screenshots/screen9.png)  
