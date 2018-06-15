@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ListPreference
+        android:defaultValue="@string/sport_1"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listArray"
+        android:key="@string/first_key"
+        android:summary="Select first sport to dispaly"
+        android:title="First Sport" />
+
+
+    <ListPreference
+        android:defaultValue="@string/sport_2"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listArray"
+        android:key="@string/second_key"
+        android:summary="Select second sport to dispaly"
+        android:title="Second Sport" />
+
+
+    <ListPreference
+        android:defaultValue="@string/sport_3"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listArray"
+        android:key="@string/third_key"
+        android:summary="Select third sport to dispaly"
+        android:title="Third Sport" />
+
+
+    <ListPreference
+        android:defaultValue="@string/sport_4"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listArray"
+        android:key="@string/fourth_key"
+        android:summary="Select fourth sport to dispaly"
+        android:title="Fourth Sport" />
+
+
+    <EditTextPreference
+        android:defaultValue="@string/number_of_items"
+        android:inputType="numberDecimal"
+        android:key="@string/items_number_key"
+        android:maxLength="2"
+        android:numeric="integer"
+        android:selectAllOnFocus="true"
+        android:title="Number of items for a sport (5 - 50)"
+        android:visibility="visible" />
+
+
+</PreferenceScreen>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Sport News</string>
+    <string name="sport_1">Darts</string>
+    <string name="sport_2">Boxing</string>
+    <string name="sport_3">Swimming</string>
+    <string name="sport_4">Kayaking</string>
+    <string name="number_of_items">10</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="no_connection">No internet connection.\nCheck your Wi-Fi!</string>
+    <string name="no_news">No news!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="response">response</string>
+    <string name="results">results</string>
+    <string name="web_title">webTitle</string>
+    <string name="publication_date">webPublicationDate</string>
+    <string name="section_name">sectionName</string>
+    <string name="web_url">webUrl</string>
+    <string name="byline">byline</string>
+    <string name="thumbnail">thumbnail</string>
+    <string name="fields">fields</string>
+
+    <string name="request_method" translatable="false">GET</string>
+    <string name="empty_string" translatable="false" />
+    <string name="charset" translatable="false">UTF-8</string>
+    <string name="input_date_format" translatable="false">yyyy-MM-dd\'T\'HH:mm:ss\'Z\'</string>
+    <string name="output_date_format" translatable="false">d MMMM yyyy</string>
+    <string name="section_">"Section: "</string>
+    <string name="author_">"Author: "</string>
+    <string name="published_">"Published on "</string>
+    <string name="section__" translatable="false">section</string>
+    <string name="section_number_" translatable="false">section number</string>
+    <string name="first_part_of_the_url" translatable="false"><![CDATA[http://content.guardianapis.com/search?section=sport&page-size=]]></string>
+    <string name="middle_part_of_the_url" translatable="false"><![CDATA[&q=]]></string>
+    <string name="second_part_of_the_url" translatable="false"><![CDATA[&api-key=a356671b-07ed-4a81-8a33-c095d1a24c0d&show-fields=byline,thumbnail&order-by=newest]]></string>
+
+    <string name="settings">Settings</string>
+
+    <string name="first_key" translatable="false">first_sport</string>
+    <string name="second_key" translatable="false">second_sport</string>
+    <string name="third_key" translatable="false">third_sport</string>
+    <string name="fourth_key" translatable="false">fourth_sport</string>
+    <string name="items_number_key" translatable="false">items_number</string>
+
+    <string name="minimum_value_is">The minimum item\'s value is 5!</string>
+    <string name="maximum_value_is">The maximum item\'s value is 50!</string>
+
+</resources>
