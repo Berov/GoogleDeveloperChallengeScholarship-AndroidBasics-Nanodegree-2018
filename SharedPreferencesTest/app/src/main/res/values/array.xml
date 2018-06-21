@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listArray">
+        <item>Athletics</item>
+        <item>Archery</item>
+        <item>American Football</item>
+        <item>Badminton</item>
+        <item>Basketball</item>
+        <item>Boxing</item>
+        <item>Baseball</item>
+        <item>Canoeing</item>
+        <item>Cycling</item>
+        <item>Darts</item>
+        <item>Football</item>
+        <item>Formula 1</item>
+        <item>Gymnastics</item>
+        <item>Golf</item>
+        <item>Handball</item>
+        <item>Hockey</item>
+        <item>Horse Racing</item>
+        <item>Ice Hockey</item>
+        <item>Judo</item>
+        <item>kayaking</item>
+        <item>Mixed Martial Arts</item>
+        <item>Motorsport</item>
+        <item>Sailing</item>
+        <item>Shooting</item>
+        <item>Snooker</item>
+        <item>Swimming</item>
+        <item>Table Tennis</item>
+        <item>Taekwondo</item>
+        <item>Tennis</item>
+        <item>Triathlon</item>
+        <item>Volleyball</item>
+        <item>Winter Sports</item>
+
+
+    </string-array>
+
+    <!--<string-array name="listValues">-->
+    <!--<item>1</item>-->
+    <!--<item>2</item>-->
+    <!--<item>3</item>-->
+    <!--</string-array>-->
+</resources>

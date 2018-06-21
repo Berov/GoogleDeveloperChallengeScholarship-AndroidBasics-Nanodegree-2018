@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Settings">
+
+    <EditTextPreference
+        android:defaultValue="5"
+        android:inputType="numberDecimal"
+        android:key="first_key"
+        android:selectAllOnFocus="true"
+        android:title="First Setting"
+        android:visibility="visible" />
+    <EditTextPreference
+        android:defaultValue="8"
+        android:fadingEdge="none|horizontal|vertical"
+        android:fadingEdgeLength="16dp"
+        android:key="second_key"
+        android:selectAllOnFocus="true"
+        android:title="Second Setting"
+        android:visibility="visible" />
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listArray"
+        android:key="downloadType"
+        android:summary="Select the kind of data that you would like to download"
+        android:title="Download Details" />
+
+</PreferenceScreen>
