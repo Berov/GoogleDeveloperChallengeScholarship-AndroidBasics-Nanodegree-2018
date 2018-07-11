@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_size_options">
+        <item>@string/size_L</item>
+        <item>@string/size_M</item>
+        <item>@string/size_XL</item>
+    </string-array>
+
+    <string-array name="array_material_options">
+        <item>@string/material_brass</item>
+        <item>@string/material_nickel</item>
+        <item>@string/material_tungsten</item>
+    </string-array>
+
+</resources>

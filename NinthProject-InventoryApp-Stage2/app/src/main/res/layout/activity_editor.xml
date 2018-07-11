@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_16"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_model_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editor_model" />
+
+        <EditText
+            android:id="@+id/editText_model_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_price" />
+
+        <EditText
+            android:id="@+id/editText_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_quantity" />
+
+        <EditText
+            android:id="@+id/editText_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_weight" />
+
+        <EditText
+            android:id="@+id/editText_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_size" />
+
+                <Spinner
+                    android:id="@+id/spinner_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_material" />
+
+                <Spinner
+                    android:id="@+id/spinner_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            app:cardBackgroundColor="#37fbe8c3"
+            app:cardCornerRadius="@dimen/padding_8"
+            app:cardElevation="1dp"
+            app:contentPadding="@dimen/padding_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_supplier_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_supplier" />
+
+                <EditText
+                    android:id="@+id/editText_supplier_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:inputType="textPersonName"
+                    android:maxLength="30" />
+
+                <TextView
+                    android:id="@+id/textView_supplier_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_supplier_phone" />
+
+                <EditText
+                    android:id="@+id/editText_supplier_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:inputType="phone"
+                    android:maxLength="20" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
