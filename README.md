@@ -11,3 +11,6 @@
 7. [News App, Stage 2](https://github.com/Berov/GoogleDeveloperChallengeScholarship-AndroidBasics-Nanodegree-2018/tree/master/SeventhProject-NewsAppSettings)
 8. [Inventory App, Stage 1](https://github.com/Berov/GoogleDeveloperChallengeScholarship-AndroidBasics-Nanodegree-2018/tree/master/EighthProject-InventoryApp-Stage1)
 9. [Inventory App, Stage 2](https://github.com/Berov/GoogleDeveloperChallengeScholarship-AndroidBasics-Nanodegree-2018/tree/master/NinthProject-InventoryApp-Stage2)
+
+
+My certificate based of these projects: https://confirm.udacity.com/UDKULXYC
