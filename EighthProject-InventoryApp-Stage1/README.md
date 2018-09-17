@@ -8,11 +8,11 @@ PROJECT SPECIFICATION
 3. There exists a subclass of SQLiteOpenHelper that overrides onCreate() and onUpgrade().
 
 4. There is a single insert method that adds:
-  - Product Name
-  - Price
-  - Quantity
-  - Supplier Name
-  - Supplier Phone Number
+    - Product Name
+    - Price
+    - Quantity
+    - Supplier Name
+    - Supplier Phone Number
   
 It is up to you to decide what datatype (e.g. INTEGER, STRING) each of these values should be; however, it is required that there are at least 2 different datatypes (e.g. INTEGER, STRING).
 
