@@ -24,7 +24,7 @@ It is up to you to decide what datatype (e.g. INTEGER, STRING) each of these val
 
 
 
-# Realisation: Darts Strore App
+# Realisation: Darts Store App
 Added two Buttons and a Toast to check if the datebase works well.
 
 ![GitHub Logo](Screenshots/screen1.png) 
