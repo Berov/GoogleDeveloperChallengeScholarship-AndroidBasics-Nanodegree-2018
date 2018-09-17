@@ -13,4 +13,4 @@
 9. [Inventory App, Stage 2](https://github.com/Berov/GoogleDeveloperChallengeScholarship-AndroidBasics-Nanodegree-2018/tree/master/NinthProject-InventoryApp-Stage2)
 
 
-My certificate based of these projects: https://confirm.udacity.com/UDKULXYC
+My certificate based on these projects: https://confirm.udacity.com/UDKULXYC
