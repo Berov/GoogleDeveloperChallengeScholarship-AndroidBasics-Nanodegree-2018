@@ -1,4 +1,4 @@
-# NinthP roject - Inventory App, Stage 2
+# Ninth Project - Inventory App, Stage 2
 
 PROJECT SPECIFICATION
 1. The app contains activities and/or fragments for the user to:
@@ -54,6 +54,6 @@ The student may also add input for how much to increase or decrease the quantity
 (i.e. Database and content provider libraries are not allowed for this project. Butterknife and similar libraries for ease of coding are allowed)
 
 
-# Realisation: Darts Strore App
+# Realisation: Darts Store App
 
 ![GitHub Logo](Screenshots/screen1.png) ![GitHub Logo](Screenshots/screen2.png) ![GitHub Logo](Screenshots/screen3.png) ![GitHub Logo](Screenshots/screen4.png) ![GitHub Logo](Screenshots/screen5.png) ![GitHub Logo](Screenshots/screen6.png) ![GitHub Logo](Screenshots/screen7.png) ![GitHub Logo](Screenshots/screen8.png) ![GitHub Logo](Screenshots/screen9.png) ![GitHub Logo](Screenshots/screen10.png) 
