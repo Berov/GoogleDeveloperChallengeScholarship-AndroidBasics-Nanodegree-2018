@@ -53,14 +53,7 @@ The student may also add input for how much to increase or decrease the quantity
 14. The intent of this project is to give you practice writing raw Java code using the necessary classes provided by the Android framework; therefore, the use of external libraries for core functionality will not be permitted to complete this project. 
 (i.e. Database and content provider libraries are not allowed for this project. Butterknife and similar libraries for ease of coding are allowed)
 
-15. 
-
-
-
-
-
 
 # Realisation: Darts Strore App
-Added two Buttons and a Toast to check if the datebase works well.
 
-![GitHub Logo](Screenshots/screen1.png) 
+![GitHub Logo](Screenshots/screen1.png) ![GitHub Logo](Screenshots/screen2.png) ![GitHub Logo](Screenshots/screen3.png) ![GitHub Logo](Screenshots/screen4.png) ![GitHub Logo](Screenshots/screen5.png) ![GitHub Logo](Screenshots/screen6.png) ![GitHub Logo](Screenshots/screen7.png) ![GitHub Logo](Screenshots/screen8.png) ![GitHub Logo](Screenshots/screen9.png) ![GitHub Logo](Screenshots/screen10.png) 
